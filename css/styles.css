@@ -730,6 +730,12 @@ body {
   gap: 16px;
   background-color: var(--orderservice-and-logospan-color);
   color: var(--h1-and-ourteam-images-bacground-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover {
+  background-color: var(--portfolio-button);
 }
 .footer-form-layout {
   margin-left: 80px;
