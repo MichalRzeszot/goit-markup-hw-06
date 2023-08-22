@@ -66,7 +66,7 @@
                 <label class="form-label"
                   >Name
                   <div class="input-position">
-                  <input name="name" type="text" id="name-input" />
+                  <input name="name" type="text" id="name-input" required/>
                   <svg class="modal-icon" width="18px" height="24px">
                     <use href="./images/icons.svg#icon-person-modal"></use>
                   </svg>
@@ -75,7 +75,7 @@
                 <label class="form-label"
                   >Phone
                   <div class="input-position">
-                  <input name="tel" type="tel" id="tel-input" />
+                  <input name="tel" type="number" id="tel-input" required/>
                    <svg class="modal-icon" width="18px" height="24px">
                     <use href="./images/icons.svg#icon-phone-modal"></use>
                   </svg>
@@ -84,7 +84,7 @@
                 <label class="form-label"
                   >Email
                   <div class="input-position">
-                  <input name="email" type="email" id="email-input" />
+                  <input name="email" type="email" id="email-input" required/>
                    <svg class="modal-icon" width="18px" height="24px">
                     <use href="./images/icons.svg#icon-email-modal"></use>
                    </svg>
@@ -95,27 +95,27 @@
                   <textarea
                     name="textarea-input"
                     id="textarea-input"
-                    placeholder="Text input"
+                    placeholder="Text input" optional
                   ></textarea>
                 </label>
+                <div class="agree-policy">
+                  <label>
+                  <input name="checkbox" class="checkbox-input" type="checkbox" required/>
+                  <span class="check-span">
+                  <svg class="check-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-checkbox-active"></use>
+                  </svg>
+                </span>
+                <p class="form-label">I accept the terms and conditions of the</p>
+                  <a href="#" class="modal-link form-label">Privacy Policy</a>
+                </label>
+                </div>
+                <div class="modal-button-layout">
+                <button type="submit" class="modal-button modal-button-text">
+                  Send
+                </button>
+              </div>
               </form>
-              <div class="agree-policy">
-              <label>
-              <input name="checkbox" class="checkbox-input" type="checkbox" />
-              <span class="check-span">
-              <svg class="check-icon" width="16px" height="16px">
-                <use href="./images/icons.svg#icon-checkbox-active"></use>
-              </svg>
-            </span>
-            <p class="form-label">I accept the terms and conditions of the</p>
-              <a href="#" class="modal-link form-label">Privacy Policy</a>
-            </label>
-            </div>
-            <div class="modal-button-layout">
-            <button type="submit" class="modal-button modal-button-text">
-              Send
-            </button>
-          </div>
           </div>
         </div>
       </section>
@@ -490,16 +490,16 @@
           <div class="form-wrapper">
           <input
             name="Subscribe"
-            type="mail"
+            type="email"
             id="email-footer"
-            placeholder="E-mail"
+            placeholder="E-mail" required
           />
+          <button type="submit" class="subscribe-button">Subscribe
+            <svg width="24px" height="24px">
+              <use href="./images/icons.svg#icon-Frame-modal"></use>
+            </svg>
+          </button>
         </form>
-        <button type="submit" class="subscribe-button">Subscribe
-          <svg width="24px" height="24px">
-            <use href="./images/icons.svg#icon-Frame-modal"></use>
-          </svg>
-        </button>
         </div>
       </div>
     </footer>
