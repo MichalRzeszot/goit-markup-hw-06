@@ -372,6 +372,9 @@ body {
   margin-top: 4px;
   padding-left: 38px;
   outline: transparent;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 #tel-input {
   width: 360px;
@@ -381,6 +384,9 @@ body {
   margin-top: 4px;
   padding-left: 38px;
   outline: transparent;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 #email-input {
   width: 360px;
@@ -390,6 +396,9 @@ body {
   margin-top: 4px;
   padding-left: 38px;
   outline: transparent;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 #textarea-input {
   width: 360px;
@@ -399,6 +408,9 @@ body {
   margin-top: 4px;
   padding: 8px 16px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 #name-input:focus,
 #email-input:focus,
