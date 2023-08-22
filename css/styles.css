@@ -42,6 +42,8 @@ body {
   --portfolio-button: #404bbf;
   --cornflower: #e7e9fc;
   --navyblue-modal: ##2e2f4266;
+  --lightstate: #8e8f99;
+  --navyblue-modal: #2e2f4266;
 }
 .container {
   width: 1158px;
@@ -322,6 +324,150 @@ body {
   background: #fff;
   border-radius: 4px;
 }
+.modal-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-top: 72px;
+  text-align: center;
+  color: var(--navyblue-background-and-heading-color);
+}
+.form {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 8px;
+  margin: 16px 24px;
+}
+.form-label {
+  display: inline;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.67%;
+  letter-spacing: 0.48px;
+  color: var(--lightstate);
+}
+.input-position {
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+#name-input {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  margin-top: 4px;
+  padding-left: 38px;
+}
+#name-input > svg {
+  position: absolute;
+}
+#tel-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  margin-top: 4px;
+  padding-left: 38px;
+}
+#email-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  margin-top: 4px;
+  padding-left: 38px;
+}
+#textarea-input {
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  margin-top: 4px;
+  padding: 8px 16px;
+}
+#textarea-input:focus,
+#email-input:focus + svg,
+#tel-input:focus + svg,
+#name-input:focus + svg {
+  outline: none;
+  border-color: var(--orderservice-and-logospan-color);
+  fill: var(--orderservice-and-logospan-color);
+}
+#textarea-input::placeholder {
+  color: var(--navyblue-modal);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116.67%;
+  letter-spacing: 0.48px;
+}
+.modal-link {
+  color: var(--orderservice-and-logospan-color);
+  text-decoration: underline;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+.checkbox-wrapper {
+  position: relative;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal);
+  margin-right: 8px;
+}
+.checkbox-icon {
+  opacity: 0;
+  top: -1px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+}
+.modal .checkbox:checked + .checkbox-icon {
+  opacity: 1;
+}
+.modal-button {
+  width: 169px;
+  padding: 16px 32px;
+  gap: 10px;
+  background-color: var(--orderservice-and-logospan-color);
+  margin: 24px 120px;
+}
+.modal-button-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  color: var(--h1-and-ourteam-images-bacground-color);
+}
 .close-button {
   position: absolute;
   right: 24px;
@@ -540,4 +686,46 @@ body {
   letter-spacing: 0.32px;
   color: var(--h1-and-ourteam-images-bacground-color);
   margin-top: 17.5px;
+}
+.subscribe-paragraph {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  color: var(--h1-and-ourteam-images-bacground-color);
+  margin-bottom: 16px;
+}
+#email-footer {
+  display: flex;
+  background-color: var(--navyblue-background-and-heading-color);
+  color: var(--h1-and-ourteam-images-bacground-color);
+  margin-right: 24px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--h1-and-ourteam-images-bacground-color);
+  border-radius: 4px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+#email-footer::placeholder {
+  color: var(--h1-and-ourteam-images-bacground-color);
+}
+.subscribe-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--orderservice-and-logospan-color);
+  color: var(--h1-and-ourteam-images-bacground-color);
+}
+.footer-form-layout {
+  margin-left: 80px;
+}
+.form-wrapper {
+  display: flex;
 }
