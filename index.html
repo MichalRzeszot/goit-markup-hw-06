@@ -24,7 +24,9 @@
         >
         <nav class="nav">
           <ul class="nav-layout">
-            <li><a class="nav-menu underline" href="./index.html">Studio</a></li>
+            <li>
+              <a class="nav-menu underline" href="./index.html">Studio</a>
+            </li>
             <li><a class="nav-menu" href="./portfolio.html">Portfolio</a></li>
             <li><a class="nav-menu" href="#">Contacts</a></li>
           </ul>
@@ -57,6 +59,55 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <h2 class="modal-heading">
+                Leave your contacts and we will call you back
+              </h2>
+              <form class="form">
+                <label class="form-label"
+                  >Name
+                  <div class="input-position">
+                  <input name="name" type="text" id="name-input" />
+                  <svg class="modal-icon" width="18px" height="24px">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                  </div>
+                </label>
+                <label class="form-label"
+                  >Phone
+                  <div class="input-position">
+                  <input type="tel" id="tel-input" />
+                   <svg class="modal-icon" width="18px" height="24px">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                  </div>
+                </label>
+                <label class="form-label"
+                  >Email
+                  <div class="input-position">
+                  <input type="email" id="email-input" />
+                   <svg class="modal-icon" width="18px" height="24px">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                  </div>
+                </label>
+                <label class="form-label"
+                  >Comment
+                  <textarea
+                    id="textarea-input"
+                    placeholder="Text input"
+                  ></textarea>
+                </label>
+              </form>
+            <div class="checkbox-wrapper">
+              <input class="checkbox" type="checkbox" />
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-checkbox-active"></use>
+              </svg>
+            </div>
+            <p class="form-label">I accept the terms and conditions of the</p>
+              <a href="#" class="modal-link form-label">Privacy Policy</a>
+              <button type="submit" class="modal-button modal-button-text">
+                Send
               </button>
             </div>
           </div>
@@ -427,6 +478,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <form class="footer-form-layout">
+          <p class="subscribe-paragraph">Subscribe</p>
+          <div class="form-wrapper">
+          <input
+            name="Subscribe"
+            type="mail"
+            id="email-footer"
+            placeholder="E-mail"
+          />
+        </form>
+        <button type="submit" class="subscribe-button">Subscribe
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-Frame-modal"></use>
+          </svg>
+        </button>
         </div>
       </div>
     </footer>
