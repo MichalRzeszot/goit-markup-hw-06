@@ -336,7 +336,6 @@ body {
   color: var(--navyblue-background-and-heading-color);
 }
 .form {
-  display: flex;
   width: 360px;
   flex-direction: column;
   align-items: flex-start;
@@ -440,12 +439,12 @@ body {
 .check-span {
   position: absolute;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  padding: 4px 3px 4px 3px;
   border-radius: 2px;
   width: 16px;
   height: 16px;
-  left: -24px;
-  top: 5px;
+  display: flex;
+  left: 0;
+  top: 0
 }
 .checkbox-input {
   position: relative;
@@ -454,16 +453,15 @@ body {
 }
 .check-icon {
   position: absolute;
-  top: 25%;
-  left: 20%;
   opacity: 0;
 }
 .checkbox-input:checked + .check-span .check-icon {
   opacity: 1;
 }
 .agree-policy {
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin-left: 24px;
   margin-top: 16px;
   margin-bottom: 24px;
 }
